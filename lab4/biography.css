@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+#up {
+    text-align: center;
+    font-size: 22px;
+}
+
+.backtomain {
+    font-style: italic;
+}
+
+#info {
+    text-align: center;
+}
+
+.buttons {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 2px;
+    background-color: blue;
+    color: white;
+    width: 140px;
+    text-align: center;
+    margin: 4px;
+    padding: 4px;
+    text-decoration: none;
+}
+
+.buttons:hover {
+    border: 2px solid black;
+    border-radius: 2px;
+    background-color: magenta;
+    color: rgb(0, 255, 0);
+}
+
+.buttons:active {
+    border: 2px solid black;
+    border-radius: 2px;
+    background-color: yellow;
+    color: rgb(0, 68, 255);
+}
+
+article {
+    font-size: 120%;
+}
+
+article h2 {
+    font-size: 140%;
+    margin-top: 0;
+}
+
+.section_box {
+    border: 1px solid black;
+    padding: 15px;
+    height: 100%;
+}
+
+.base_text {
+    background-color: aqua;
+    color: brown;
+}
+
+.child_text {
+    background-color: lightyellow;
+    color: darkgreen;
+}
+
+.school_text {
+    background-color: lightpink;
+    color: navy;
+}
+
+.behind_text {
+    background-color: lightgray;
+    color: purple;
+}
+
+.uni_text {
+    background-color: peachpuff;
+    color: darkblue;
+}
+
+.back_to_info {
+    display: inline-block;
+    margin-top: 6px;
+    font-weight: 700;
+}
+
+.go_up {
+    text-transform: uppercase;
+}
+
+.sections_container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.section_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+@media (min-width: 992px) {
+    .section_wrapper:nth-child(1),
+    .section_wrapper:nth-child(2),
+    .section_wrapper:nth-child(3) {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+    .section_wrapper:nth-child(4),
+    .section_wrapper:nth-child(5) {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .section_wrapper:nth-child(1),
+    .section_wrapper:nth-child(2),
+    .section_wrapper:nth-child(3),
+    .section_wrapper:nth-child(4) {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .section_wrapper:nth-child(5) {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .section_wrapper {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

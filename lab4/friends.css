@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+.friends {
+    text-align: center;
+    font-size: 22px;
+}
+
+.backtomain {
+    font-style: italic;
+}
+
+.myfriends {
+    text-align: center;
+}
+
+.friends_table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+.info_row {
+    align-content: center;
+    background: green;
+    color: yellow;
+    font-weight: bold;
+}
+
+.info_row > th {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.friends_body_table > tr:nth-child(odd) {
+    background: gray;
+    color: #1cdce3;
+}
+
+.friends_body_table > tr:nth-child(even) {
+    background: white;
+}
+
+.friends_body_table > tr > td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.friends_body_table > tr > td:last-child {
+    text-align: right;
+}
+
+@media (min-width: 992px) {
+    .info_row > th {
+        font-size: 130%;
+    }
+    .friends_body_table > tr > td {
+        font-size: 120%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .info_row > th {
+        font-size: 120%;
+    }
+    .friends_body_table > tr > td {
+        font-size: 110%;
+    }
+}
+
+@media (max-width: 767px) {
+    .info_row > th {
+        font-size: 110%;
+    }
+}
